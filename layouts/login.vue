@@ -1,32 +1,5 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      v-model="drawer"
-      mobile-breakpoint="0"
-      disable-resize-watcher
-      app
-    >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item
-            v-for="item in items"
-            :key="item.title"
-            :to="item.to"
-            nuxt
-          >
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
     <v-main>
       <v-sheet
         tile
@@ -38,7 +11,6 @@
           flat
           outlined
         >
-          <!-- <v-app-bar-nav-icon@click="drawer=!drawer" /> -->
           <v-toolbar-title>E2E SAMPLE</v-toolbar-title>
         </v-app-bar>
         <v-container
@@ -65,7 +37,7 @@
 export default {
   data() {
     return {
-      drawer: true,
+      drawer: false,
       items: [
         {
           icon: 'mdi-home',

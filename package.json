@@ -14,8 +14,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@nuxtjs/axios": "^5.12.0",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "vee-validate": "^3.3.11"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
@@ -37,6 +39,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "testcafe": "^1.9.1",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "zxcvbn": "^4.4.2"
   }
 }

@@ -15,7 +15,7 @@ test('Login', async (targetPage) => {
       // パスワードを入力
       .typeText(Selector('[data-testid="login.password"]'), 'userpass')
       // Screenshotを保存
-      .takeScreenshot('e2e/login.png')
+      // .takeScreenshot('e2e/login.png')
       // ログインボタンをクリック
       .click(Selector('[data-testid="login.btn"]'));
   // 現在のURLを取得
