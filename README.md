@@ -2,7 +2,7 @@
 
 ## Build Setup
 
-Get token and create .env file
+Get token and create .env file  
 https://dashboard.ngrok.com/auth/your-authtoken
 
 .env
