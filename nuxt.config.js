@@ -58,7 +58,20 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
+    '@nuxtjs/ngrok',
   ],
+  /*
+   ** ngrok module configuration
+   ** See https://www.npmjs.com/package/@nuxtjs/ngrok
+   */
+  ngrok: {
+    authtoken: process.env.NGROK_AUTHTOKEN,
+    auth: process.env.NGROK_AUTH,
+    region: 'jp',
+    addr: 3000,
+    proto: 'http',
+    // subdomain: 'os-e2e-sample',
+  },
   /*
    ** Nuxt.js modules
    */
