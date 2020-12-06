@@ -16,8 +16,10 @@ NGROK_AUTH=username:password
 $ yarn install
 
 # serve with hot reload at localhost:3000
-# and create Public URL (ngrok)
 $ yarn run dev
+
+# and create Public URL (ngrok)
+$ dev:ngrok
 
 # build for production and launch server
 $ yarn build

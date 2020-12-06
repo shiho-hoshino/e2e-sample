@@ -1,5 +1,17 @@
 import colors from 'vuetify/es5/util/colors';
 
+const buildModules = [
+  // Doc: https://github.com/nuxt-community/eslint-module
+  '@nuxtjs/eslint-module',
+  // Doc: https://github.com/nuxt-community/stylelint-module
+  '@nuxtjs/stylelint-module',
+  '@nuxtjs/vuetify',
+];
+
+if (process.env.USE_NGROK) {
+  buildModules.push('@nuxtjs/ngrok');
+}
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -52,14 +64,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify',
-    '@nuxtjs/ngrok',
-  ],
+  buildModules: buildModules,
   /*
    ** ngrok module configuration
    ** See https://www.npmjs.com/package/@nuxtjs/ngrok
