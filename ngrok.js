@@ -17,8 +17,6 @@ const ngrok = require('ngrok');
   const domain = url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1];
   const urltmp = 'https://' + process.env.NGROK_AUTH + '@' + domain;
 
-  // console.log(urltmp);
-
   // 環境変数に必要な情報を書き込み
   process.env.TEST_URL = urltmp;
   process.env.BROWSERSTACK_USERNAME = process.env.BROWSERSTACK_USERNAME;
