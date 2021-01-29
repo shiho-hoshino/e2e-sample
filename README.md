@@ -27,6 +27,12 @@ $ yarn start
 
 # generate static project
 $ yarn generate
+
+# Testing local Server by testcafe
+$ yarn local:test
+
+# Testing ngrok Server by testcafe
+$ yarn ngrok:test
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

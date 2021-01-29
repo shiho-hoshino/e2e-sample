@@ -12,12 +12,16 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest"
+    "test": "jest",
+    "local:test": "TEST_URL=http://localhost:3000 yarn testcafe chrome test/e2e/**.js",
+    "ngrok:test": "node ngrok.js"
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@nuxtjs/axios": "^5.12.0",
+    "ngrok": "^3.4.0",
     "nuxt": "^2.14.0",
+    "path": "^0.12.7",
     "vee-validate": "^3.3.11"
   },
   "devDependencies": {
@@ -30,6 +34,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.1.0",
+    "dotenv": "^8.2.0",
     "eslint": "^7.5.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.11.0",
@@ -41,6 +46,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "testcafe": "^1.9.1",
+    "testcafe-browser-provider-browserstack": "^1.13.2-alpha.1",
     "vue-jest": "^3.0.4",
     "zxcvbn": "^4.4.2"
   }

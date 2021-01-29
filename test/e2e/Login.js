@@ -1,6 +1,6 @@
 import {Selector, ClientFunction} from 'testcafe';
 
-fixture`Getting Started`.page`http://localhost:3000/login/`;
+fixture`Getting Started`.page`${process.env.TEST_URL}/login/`;
 const getWindowLocation = ClientFunction(() => window.location);
 
 test('Login', async (targetPage) => {
